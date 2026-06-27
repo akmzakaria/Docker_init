@@ -13,7 +13,7 @@ if (!process.env.REDIS_URL) {
 
 const user: { name: string; age: number } = {
   name: 'AKM Zakaria',
-  age: '20',
+  age: 20,
 }
 
 const redis = createClient({
