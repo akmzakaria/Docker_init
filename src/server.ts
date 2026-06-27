@@ -11,6 +11,11 @@ if (!process.env.REDIS_URL) {
   throw new Error('Missing REDIS_URL environment variable!')
 }
 
+const user: { name: string; age: number } = {
+  name: 'AKM Zakaria',
+  age: '20',
+}
+
 const redis = createClient({
   url: process.env.REDIS_URL,
 })
